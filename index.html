@@ -24,7 +24,7 @@
             <div id="wrap">
                 <div id="text">
                     <div id="code">
-                      <font color="#FF0000">
+                      <span style="color: #FF0000">
                       <span class="say"> 亲爱的月儿，我爱你😍,</span><br>
                       <span class="say"> 从在一起的第一天，</span><br>
                       <span class="say"> 我就决定要好好地爱你，</span><br>
@@ -41,7 +41,7 @@
                       <span class="say"> 就让我们一起走到生命的尽头吧！ </span><br>
                       <span class="say"> 我会一直保护你，照顾你，爱你👩‍❤️‍💋‍👨。</span><br>
                       <span class="say"><span class="space"></span> -- Your Lover Mr. Zhao</span>
-                      </font>
+                      </span>
                           <br />
                           <br />
                       </p>
@@ -181,7 +181,6 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
@@ -200,11 +199,11 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2021, 5, 10); 			//时间年月日
-		    together.setHours(00);						//小时	
-		    together.setMinutes(00);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(0);				//秒第二位
+		    together.setFullYear(2021, 5, 10);
+		    together.setHours(00);
+		    together.setMinutes(00);
+		    together.setSeconds(0);
+		    together.setMilliseconds(0);
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
